@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+  }
+
+  .emojis {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 10px; 
+    max-width: 900px; 
+}
+
+  .emoji {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff; 
+    text-align: center; 
+  }
+  
+  .emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+  
+  .emoji a {
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem; 
+  }
+  
+  .icon {
+    font-size: 4rem;
+    margin: 1rem 0; 
+  }
+
+  @media (max-width: 600px) {
+    .emojis {
+        grid-template-columns: 1fr; 
+    }
+}
